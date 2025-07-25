@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Professor(a)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="login-card p-4 rounded-4 text-white">
+      <div class="text-center mb-4">
+        <h2 >Boas-vindas!</h2>
+        <h4 class="text-success-emphasis"><span class="professor">professor(a)! </span></h4> 
+      </div>
+
+      <form>
+        <div class="mb-3 input-group">
+          <span class="input-group-text bg-secondary text-white"><i class="fas fa-user"></i></span>
+          <input type="email" class="form-control" placeholder="E-mail" required>
+        </div>
+        <div class="mb-3 input-group">
+          <span class="input-group-text bg-secondary text-white"><i class="fas fa-lock"></i></span>
+          <input type="password" class="form-control" placeholder="Senha" required>
+        </div>
+
+        <div class="mb-3 text-white">
+          <small>Não tem cadastro? <a href="#" class="text-decoration-none text-light">Cadastre-se</a></small>
+        </div>
+
+        <div class="d-grid mb-3">
+          <button type="submit" class="btn btn-success">Iniciar sessão</button>
+        </div>
+
+        <div class="text-center">
+          <small >Esqueceu sua senha? <a href="#" class="text-success text-decoration-none"><span>Clique aqui.</span></a></small>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

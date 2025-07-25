@@ -1,0 +1,22 @@
+body {
+  background: url("unicetwhite.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #015d52; /* Fundo escuro com transparência */
+  backdrop-filter: blur(5px);
+}
+span{ 
+    color: #62d236;
+}
+.professor, h2{
+    color: #ddf9ee;
+}
+    
+button{
+    background-color: #2f6c27;
+}
