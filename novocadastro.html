@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Uni-CET</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f1f1f1;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: linear-gradient(to bottom, #ddf9ee, #477a70);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 370px;
+      text-align: center;
+    }
+
+    .card h2 {
+      color: #244f49;
+      margin-bottom: 1.5rem;
+    }
+
+    .card input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+    }
+
+    .card input::placeholder {
+      color: #ccc;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+
+    .buttons button {
+      flex: 1;
+      padding: 10px;
+      margin: 0 5px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+    }
+    a {
+  color: inherit;
+  text-decoration: none;
+
+  }
+
+    .login-btn {
+      background-color: #333;
+    }
+
+    .create-btn {
+      background-color: #079382;
+    }
+
+    .logo {
+      margin-top: 1.5rem;
+    }
+
+    .logo img {
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Novo Cadastro</h2>
+    <form>
+      <input type="text" placeholder="Professor(a):" required />
+      <input type="text" placeholder="CPF:" required />
+      <input type="email" placeholder="E-mail:" required />
+      <input type="password" placeholder="Senha:" required />
+      <div class="logo">
+        <img src="src/unicetwhite.png" alt="Logo Uni-CET">
+      </div>
+      <div class="buttons">
+        <button type="button" class="login-btn"><a href="index.html">Já possui login?</a>
+        <button type="submit" class="create-btn">Criar conta</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

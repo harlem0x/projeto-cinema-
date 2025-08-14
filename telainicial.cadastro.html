@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo - UniCET</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .welcome-card {
+      background: linear-gradient(to bottom, #2a6359, #477a70);
+      width: 320px;
+      padding: 2rem;
+      border-radius: 25px;
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .welcome-card::before {
+      content: "";
+      background: url('./src/logocinema01.png') no-repeat center;
+      background-size: contain;
+      opacity: 0.60;
+      position: absolute;
+      top: 0;
+      bottom: 100;
+      left: 0;
+      width: 150%;
+      height: 150%;
+      z-index: 0;
+    }
+
+    .welcome-card h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .welcome-card p {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .buttons a {
+      padding: 5px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-login {
+      background-color: #9c3c3c;
+      color: white;
+    }
+
+    .btn-cadastro {
+      background-color: #3c9c5f;
+      color: white;
+    }
+
+    .logo {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    .footer {
+      font-size: 0.75rem;
+      color: #ccc;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="welcome-card">
+    <h1>Bem-vindo!</h1>
+    <p>Acesse sua conta ou cadastre-se<br>para viver a experiência completa<br>do cinema com a gente.</p>
+
+    <div class="buttons">
+      <a href="#" class="btn-login">🍿 Acessar conta</a>
+      <a href="#" class="btn-cadastro">🧑‍💼 Cadastrar-se</a>
+    </div>
+
+    <div class="logo">
+      <img src="src/unicetwhite.png" alt="UniCET">
+    </div>
+
+    <div class="footer">© 2025 UniCET</div>
+  </div>
+
+</body>
+</html>

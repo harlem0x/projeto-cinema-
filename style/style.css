@@ -1,20 +1,91 @@
 body {
-  background: url("unicetwhite.png") no-repeat center center fixed;
+ no-repeat center center fixed;
   background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .login-card {
   width: 100%;
-  max-width: 400px;
-  background-color: #015d52; /* Fundo escuro com transparência */
+  max-width: 280px;
+  background-color: #26dec8; 
   backdrop-filter: blur(5px);
 }
+
+
+/*.login-card{
+  width: 100%;
+  max-width: 400px;
+  background-color: #104f47d5; 
+  backdrop-filter: blur(10px);
+  background-image: url("/src/unicetwhite.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  position: relative;
+}*/
+
+
+
+
+.login-card {
+  width: 100%;
+  width: 440px;
+  background-color: #015d52;
+  backdrop-filter: blur(5px);
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* Adiciona o logo no fundo com transparência */
+.login-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: url("/src/unicetwhite.png") no-repeat center center;
+  background-size: 70%;
+  opacity: 0.09; 
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+
+.login-card * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 span{ 
     color: #62d236;
 }
-.professor, h2{
+.professor{
     color: #ddf9ee;
+}
+
+h2{
+  color: #1fdb4e;
 }
     
 button{
